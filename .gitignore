@@ -89,3 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 LittleBirdie.xcodeproj/project.xcworkspace/xcuserdata/manish.xcuserdatad/UserInterfaceState.xcuserstate
+LittleBirdie/NetworkingLayer/TwitterAPIKeys.swift
