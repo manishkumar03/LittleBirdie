@@ -55,11 +55,6 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction func doRefreshTweets(_ sender: Any) {
         viewModel.getTimeline()
     }
-    
-    @IBAction func doLogout(_ sender: UIBarButtonItem) {
-        userSessionManager.doLogout()
-    }
-
 
     func displayAlert(_ errorText: String) {
         DispatchQueue.main.async {

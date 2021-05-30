@@ -99,7 +99,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Tweets" id="aaC-6g-f2B">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="rqo-vs-wEu"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="rqo-vs-wEu">
+                                            <connections>
+                                                <action selector="doRefreshTweets:" destination="QjX-Q3-7vj" id="fuP-W5-RIX"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -147,7 +151,7 @@
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment>
-                                                                    <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                    <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
                                                                         <font key="NSFont" size="14" name="AvenirNext-Regular"/>

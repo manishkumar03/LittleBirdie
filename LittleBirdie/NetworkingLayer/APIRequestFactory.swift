@@ -104,7 +104,7 @@ class APIRequestFactory {
         ]
 
         let queryParameters = ["tweet_mode": "extended",
-                               "count": "100"]
+                               "count": "50"]
 
         /// Note that the query parameters are being added to the list of params which are used to generate the signature.
         for (key, value) in queryParameters {
