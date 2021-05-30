@@ -88,6 +88,4 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-SwiftyJaal.xcodeproj/project.xcworkspace/xcuserdata/manish.xcuserdatad/UserInterfaceState.xcuserstate
-TwitterAPIKeys.swift
-LittleBirdie/NetworkingLayer/TwitterAPIKeys.swift
+LittleBirdie.xcodeproj/project.xcworkspace/xcuserdata/manish.xcuserdatad/UserInterfaceState.xcuserstate
