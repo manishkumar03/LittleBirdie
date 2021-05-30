@@ -25,12 +25,14 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func setupBindings() {
+        /// If any errors are bubbled up by the view model, display them using an alert.
         viewModel.errorText.bind { errorText in
             if !errorText.isEmpty {
                 self.displayAlert(errorText)
             }
         }
-        
+
+        /// Once the tweets are fetched, store them locally.
         viewModel.tweets.bind { tweets in
             print("TWEETS TWEETS TWEETS")
             if !tweets.isEmpty {
@@ -38,6 +40,7 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
 
+        /// Once the profile images have been fetched by the view model, reload the tableview
         viewModel.profileImages.bind { profileImages in
             if !profileImages.isEmpty {
                 DispatchQueue.main.async {
@@ -65,13 +68,6 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
             self.present(alert, animated: true, completion: nil)
         }
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
-//
-//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
     
     // MARK: - Table view data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
