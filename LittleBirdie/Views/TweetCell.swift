@@ -24,4 +24,22 @@ class TweetCell: UITableViewCell {
                                                          bottom: 0,
                                                          right: -padding)
     }
+
+    /// Assign values to relevant subviews of the tableview cell
+    func configureCell(tweet: Tweet, profileImage: UIImage?) {
+        self.userNameLabel.text = tweet.user.name
+
+        if let retweetedStatus = tweet.retweetedStatus {
+            let attributionString = "Retweeted from \(retweetedStatus.user.name) \n"
+            self.tweetTextView.text = attributionString + retweetedStatus.fullText
+        } else {
+            self.tweetTextView.text = tweet.fullText
+        }
+
+        if let profileImage = profileImage {
+            self.profileImageView.image = profileImage
+        } else {
+            self.profileImageView.image = UIImage(systemName: "cloud")
+        }
+    }
 }

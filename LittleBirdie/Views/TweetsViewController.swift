@@ -73,19 +73,9 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCell
 
         let tweet = tweets[indexPath.row]
-        cell.userNameLabel.text = tweet.user.name
-
-        if let retweetedStatus = tweet.retweetedStatus {
-            let attributionString = "Retweeted from \(retweetedStatus.user.name) \n"
-            cell.tweetTextView.text = attributionString + retweetedStatus.fullText
-        } else {
-            cell.tweetTextView.text = tweet.fullText
-        }
-
-        if let profileImage = self.profileImages[indexPath.row] {
-            cell.profileImageView.image = profileImage
-        }
-
+        let profileImage = self.profileImages[indexPath.row]
+        cell.configureCell(tweet: tweet, profileImage: profileImage)
+        
         return cell
     }
 }
