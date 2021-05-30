@@ -94,9 +94,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-7V-gKb">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-7V-gKb">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Tweets" id="aaC-6g-f2B">
                                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="rqo-vs-wEu">
@@ -107,9 +106,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ECh-l4-ZHc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ECh-l4-ZHc">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweetCell" id="WNG-YC-typ" customClass="TweetCell" customModule="LittleBirdie" customModuleProvider="target">
@@ -201,6 +199,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WTi-fH-ZdD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hVb-7V-gKb" firstAttribute="trailing" secondItem="WTi-fH-ZdD" secondAttribute="trailing" id="1Cf-Fz-48W"/>
+                            <constraint firstItem="ECh-l4-ZHc" firstAttribute="top" secondItem="hVb-7V-gKb" secondAttribute="bottom" id="Imn-6f-2ab"/>
+                            <constraint firstItem="ECh-l4-ZHc" firstAttribute="leading" secondItem="WTi-fH-ZdD" secondAttribute="leading" id="Np5-nM-8h6"/>
+                            <constraint firstItem="hVb-7V-gKb" firstAttribute="top" secondItem="WTi-fH-ZdD" secondAttribute="top" id="dBR-ua-bcv"/>
+                            <constraint firstItem="ECh-l4-ZHc" firstAttribute="top" secondItem="hVb-7V-gKb" secondAttribute="bottom" id="qtU-di-ZO0"/>
+                            <constraint firstItem="ECh-l4-ZHc" firstAttribute="trailing" secondItem="WTi-fH-ZdD" secondAttribute="trailing" id="tmD-bx-mO4"/>
+                            <constraint firstItem="hVb-7V-gKb" firstAttribute="leading" secondItem="WTi-fH-ZdD" secondAttribute="leading" id="uk0-XX-2jl"/>
+                            <constraint firstItem="ECh-l4-ZHc" firstAttribute="bottom" secondItem="WTi-fH-ZdD" secondAttribute="bottom" id="xZw-Fq-WhA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tweets" image="list.bullet.rectangle" catalog="system" selectedImage="list.bullet.rectangle" id="G9i-4A-mOf"/>
                     <connections>
