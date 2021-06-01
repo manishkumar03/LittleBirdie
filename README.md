@@ -14,3 +14,9 @@ LittleBirdie is a minimalist Twitter client app for iOS written in Swift. I wrot
 - **Modern Networking Stack:** A neteworking stack based on generics. The usage of `APIRequest`, `APIResponse` and `RequestAdapter` makes the networking stack flexible and extensible.
 - **MVVM Design Pattern:** Shows how to use MVVM the right way by using data binding so that any change in model automatically triggers the view refresh.
 - **Insightful:** Copious amount of comments and an accompanying blog post describe the thought process behind the design choices.
+
+## Setup
+1. Register your app on the Twitter Developer Portal.
+2. Obtain the `Consumer_Key` and the `Consumer_Secret` for that app.
+3. Decide on a callback scheme. LittleBirdie uses `muskitwitter` but you can use your own.
+4. Update these values in the `TwitterAPIKeys.swift` file.
