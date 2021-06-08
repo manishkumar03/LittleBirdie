@@ -16,6 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconSource" translatesAutoresizingMaskIntoConstraints="NO" id="Xr8-aS-TwQ">
+                                <rect key="frame" x="87" y="140" width="240" height="240"/>
+                                <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Z6e-Tc-vM6"/>
+                                    <constraint firstAttribute="width" constant="240" id="bIC-6J-of4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LittleBirdie needs your permission to access your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-ZA-8T3">
+                                <rect key="frame" x="48" y="404" width="318" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBR-Dd-8au">
                                 <rect key="frame" x="16" y="625" width="382" height="45"/>
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.50588235294117645" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,6 +53,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DBR-Dd-8au" secondAttribute="bottom" constant="192" id="0WP-Fb-Pth"/>
                             <constraint firstItem="DBR-Dd-8au" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L8b-D1-r7j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DBR-Dd-8au" secondAttribute="trailing" constant="16" id="aca-kf-BKM"/>
+                            <constraint firstItem="DgH-ZA-8T3" firstAttribute="top" secondItem="Xr8-aS-TwQ" secondAttribute="bottom" constant="24" id="etP-yP-Qtv"/>
+                            <constraint firstItem="Xr8-aS-TwQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="i8R-DV-lkc"/>
+                            <constraint firstItem="Xr8-aS-TwQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUO-tl-oNE"/>
+                            <constraint firstItem="DgH-ZA-8T3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="npT-Bt-2Lu"/>
+                            <constraint firstItem="DgH-ZA-8T3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="qHo-gS-DJc"/>
+                            <constraint firstAttribute="trailing" secondItem="DgH-ZA-8T3" secondAttribute="trailing" constant="48" id="vom-7d-vxk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -238,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AppIconSource" width="1000" height="1000"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
